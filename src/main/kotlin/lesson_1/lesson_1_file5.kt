@@ -3,19 +3,19 @@ package org.example.lesson_1
 
 fun main() {
 
-    val minutes = SECONDS / 60
+    val seconds = 6480
 
-    val remainingSeconds = SECONDS % 60
+    val minutes = seconds / REMAINDER
 
-    val hour = minutes / 60
+    val remainingSeconds = seconds % REMAINDER
 
-    val remainingMinutes = minutes % 60
+    val hour = minutes / REMAINDER
+
+    val remainingMinutes = minutes % REMAINDER
 
     val formattedTime = String.format("%02d:%02d:%02d", hour, remainingMinutes, remainingSeconds)
     println(formattedTime)
 
-
-
 }
 
-const val SECONDS = 6480
+const val REMAINDER = 60
