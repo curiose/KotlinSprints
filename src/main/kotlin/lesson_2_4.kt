@@ -6,8 +6,8 @@ fun main() {
     val crystalOre= 7
     val ironOre = 11
 
-    val crystalOreWithBuff = (crystalOre * buff) / 100.toInt()
-    val ironOreWithBuff = (ironOre* buff)/ 100.toInt()
+    val crystalOreWithBuff = (crystalOre * buff) / HUNDRED.toInt()
+    val ironOreWithBuff = (ironOre * buff) / HUNDRED.toInt()
 
     println("Плюс $crystalOreWithBuff к материалу 'Кристалличесская руда'")
 
@@ -15,4 +15,5 @@ fun main() {
 
 }
 
+const val HUNDRED = 100
 
