@@ -6,7 +6,7 @@ fun main() {
     val afternoon = 12
     val evening = 17
 
-    fun greets(currentTime:Int, userName:String) {
+    fun greets(currentTime : Int, userName : String) {
         if (currentTime >= 16 ) {
             println("Добрый вечер, $userName")
         }
@@ -15,8 +15,8 @@ fun main() {
         }
     }
 
-    var greeting = greets(afternoon, userName).toString()
+    var greeting = greets(afternoon, userName)
 
-    greeting = greets(evening, userName).toString()
+    greeting = greets(evening, userName)
 
 }
